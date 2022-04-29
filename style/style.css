@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: 'Poppins', "Arial",sans-serif;
+    font-size: 10px;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0 0 13%;
+    width: 29%;
+    position: fixed;
+}
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 70%;
+}
+
+.nav_links a {
+    display: flex;
+    align-items: center;
+    padding: 8px 25px 8px 8px;
+    font-size: 2rem;
+    width: fit-content;
+}
+
+.nav_links a i {
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+.nav_links span {
+    margin-left: 15px;
+}
+
+.nav_links a:hover , .main_account a:hover {
+    background-color: #3e3e3e;
+    border-radius: 9999px;
+}
+
+.nav_links a:first-child {
+    padding: 8px 8px;
+}
+
+.nav_links a i:first-child {
+    margin: 0;
+}
+
+.twiete_butten {
+    color: white;
+    background-color:rgb(29 , 155 , 240);
+    font-size: 1.7rem;
+    font-weight: 700;
+    width: 90%;
+    height: 55px;
+     border-radius: 9999px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: 0.2s;
+}
+
+.twiete_butten:hover {
+   
+    background-color: rgba(29 , 155 , 240 , 0.9);
+}
+
+.main_account {
+    width: 100%;
+    height: 30%;
+    padding-top: 185px;
+}
+
+.account_image {
+    height: 42px;
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.main_account a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px 8px 15px;
+    margin-right: 10px;
+}
+
+.account_details {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    font-size: 1.6rem;
+    margin-left: 10px;
+    flex-basis: 70%;
+}
+
+.account_auther {
+    font-weight: 500;
+    color: white;
+}
+
+.account_name {
+    color: rgb(110,111, 112);
+}
+
+
+main {
+    height: 100%;
+    width: 71%;
+    margin-left: 29%;
+}
+
+.main-flex {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-feed {
+
+    width: 50%;
+    border-left: 1px solid rgb(47 , 50 , 52);
+    border-right: 1px solid rgb(47 , 50 , 52);
+}
+
+.main-bar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 0 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 55px;
+}
+
+.new-dweet {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    padding: 4px 16px;
+}
+
+.new-dweet .account_image {
+    height: 50px;
+    width: 62px;
+    cursor: pointer;
+}
+
+.new-dweet-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 4px;
+    margin-left: 12px;
+}
+
+.new-dweet-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+.new-dweet input{
+    width: 100%;
+    height: 24px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.new-dweet-actions ul {
+display: flex;
+list-style: none;
+}
+
+.new-dweet-actions ul li {
+    color: #1c88d2;
+    
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.new-dweet-actions .twiete_butten {
+    width: 75px;
+    height: 35px;
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+
+.feed-dweet {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100px;
+    cursor: pointer;
+    border-top: 1px solid rgb(47 , 51 , 54);
+    padding: 12px 16px 0 16px;
+}
+
+.feed_dweeter-detailes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 12px;
+}
+
+.feed-dweet i {
+    color: rgb(110 , 118 , 120);
+    font-size: 2rem;
+}
+
+.dweeter-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 1.7rem;
+}
+
+.dweet-text {
+    color: white;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+.dweet-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 16px 0;
+    padding-right: 50px;
+}
+
+.side-feed {
+    width: 50%;
+    padding: 0 2%;
+}
+
+.search {
+    display: flex;
+    position: sticky;
+    top: 0;
+    margin-top: 5px;
+    max-width: 355px;
+    height: 55px;
+    background-color: black;
+}
+
+.search input {
+    color: white;
+    background-color: #212327;
+    border-radius: 9999px;
+    border: none;
+    line-height: 2rem;
+    height: 45px;
+    width: 100%;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    max-width: 355px;
+    height: 570px;
+    background-color: #212327;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+
+.h1-title {
+    color: white;
+    padding: 15px ;
+    line-height: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.trending-item {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    width: 100%;
+    color: white;
+    line-height: 2rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 0 15px;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.item-catogary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #535b69;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+    align-items: center;
+}
+
+.trending p {
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+.trending-span {
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+    color: #535b69;
+    margin-top: 7px;
+}
+
+.trending-item:hover , .show-more:hover,.follow.follow-profile {
+    background-color: #1c1e22;
+    cursor: pointer;
+}
+
+.show-more {
+    color: rgb(29 , 155 , 240);
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 300;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+.follow {
+    max-width:355px ;
+    flex-direction: column;
+    height: 250px;
+    display: flex;
+    border-radius: 15px;
+    background-color: #212327;
+    margin-top: 15px;
+}
+
+.follow-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+    padding: 30px 15px;
+}
+
+.follow-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.follow-details a {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.follow-details a:hover {
+    text-decoration: underline;
+}
+
+.follow-details span {
+    font-size: 1.35rem;
+    font-weight: 300;
+    color: rgb(110 , 118 , 125);
+}
+
+#follows {
+    margin-left: 5px;
+    padding: 5px;
+    font-weight: 300;
+    font-size: 1.35rem;
+    border-radius: 3px;
+}
+
+.follow .twiete_butten {
+    height: 35px;
+    width: 75px;
+    margin: 0 0 0 12px;
+    color: black;
+    background-color: white;
+    font-weight: 600;
+}
+
+
+.follow .show-more {
+    padding: 10px 10px;
+}
